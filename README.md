@@ -20,4 +20,4 @@ HTML: Structure of the web page.
 CSS: Styling and responsive design.
 JavaScript: Game logic and interactivity.
 Live Demo
-Play the game online: Rock-Paper-Scissors Game
+Play the game online: https://murali09p.github.io/Rock-paper-scissors/
