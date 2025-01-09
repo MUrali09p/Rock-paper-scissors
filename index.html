@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock paper scissors</title>
+</head>
+<body>
+    <div class="nav">
+        <h1>
+            <span class="ro">Rock</span>
+            <span class="pa">Paper</span>
+            <span class="si">Scissors</span>
+        </h1>
+    </div>
+    <div class="choises">
+        <div class="choise ro " id="rock" >
+            <img src="rock.png" alt="rock">
+        </div>
+        <div class="choise pa" id="paper">
+            <img src="paper.png" alt="paper">
+        </div>
+        <div class="choise si" id="scissors">
+            <img src="scissors.png" alt="scissors">
+        </div>
+    </div>
+    <div class="instructions">
+        <p>Tap your option to play</p>
+    </div>
+   <div class=display-container>
+        <div class="result-container">
+          <div  class="user">
+            <div class="naming">
+                <p>You</p>
+            </div>
+            <div class="user-choise">
+                <img id="user-image" src="" alt="your-choise">
+            </div>
+         </div> 
+            <div class="game-result">
+                <p class="result-message">game-result</p>
+            </div>
+         <div class="com">
+            <div class="naming">
+                <p>Computer</p>
+            </div>
+            <div class="computer-choise">
+                <img id="computer-image" src="" alt="computer-choise">
+            </div>
+        </div>
+        </div>
+        <div class="score-board">
+            <p class="scores">score board</p>
+            <div>
+                <p class="you">you</p>
+                <p class="user-score">0</p>
+            </div>
+            <div>
+                <p class="computer">computer</p>
+                <p class="computer-score">0</p>
+            </div>
+        </div>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>

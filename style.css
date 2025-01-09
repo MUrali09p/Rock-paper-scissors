@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+.nav{
+    background-color: #26006e;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 50;
+
+}
+.ro{
+    color: #fb2bf3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
+}
+.pa{
+    color: #04dbbb;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
+}
+.si{
+    color: #0c7beb;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
+}
+.choise{
+    display: flex;
+    height: 11rem;
+    width: 11rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.choises {
+    margin-top: 2rem;
+    gap: 3rem;
+    transition: all 0.5s ease; /* Smooth transition for layout changes */
+}
+img{
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+.choises{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+.choise:hover{
+    cursor: pointer;
+}
+@keyframes shine {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.choise.ro:hover {
+    animation: shine 0.5s infinite;
+    background-color: #fb2bf3;
+    box-shadow: 0 0 20px #fb2bf3;
+}
+
+.choise.pa:hover {
+    animation: shine 0.5s infinite;
+    background-color: #04dbbb;
+    box-shadow: 0 0 20px #04dbbb;
+}
+
+.choise.si:hover {
+    animation: shine 0.5s infinite;
+    background-color: #0c7beb;
+    box-shadow: 0 0 20px #0c7beb;
+}
+.instructions {
+    margin-top: 1rem;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    border-radius: 0.5rem;
+    background-color: #26006e;
+    display: inline-block;
+    border: none;
+}
+
+.choises {
+    margin-top: 7rem;
+    gap: 5rem;
+    transition: all 0.5s ease; /* Smooth transition for layout changes */
+}
+
+.choises.shift-up {
+    margin-top: 0.5rem;
+    gap: 2rem;
+}
+/* Styling the display container */
+.display-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    background-color: #26006e; /* Light cream background */
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 50rem;
+    margin: 1rem auto;
+    visibility: hidden;
+}
+
+/* Styling the result container */
+.result-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+/* User and computer choice styling */
+.user-choise,
+.computer-choise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    flex-direction: column;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 4);
+}
+
+.user-choise img,
+.computer-choise img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Styling the result text */
+.game-result {
+    text-align: center;
+}
+
+.result-message {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
+
+}
+
+/* Scoreboard styling */
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.scores {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #5c5c5c;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.score-board div {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.you,
+.computer {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #5c5c5c;
+}
+
+.user-score,
+.computer-score {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000080; /* Navy color for scores */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .result-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .user-choise,
+    .computer-choise {
+        width: 120px;
+        height: 120px;
+    }
+
+    .user-choise img,
+    .computer-choise img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .score-board {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+.display-container {
+    margin-top: 0rem; /* Ensure consistent gap */
+    transition: margin-top 0.5s ease; /* Smooth transition */
+}
+
+.display-container.shift-up {
+    margin-top: 0rem; /* Keep the gap when shifting */
+}
+.naming{
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
+}
+.user, .com{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
